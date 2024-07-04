@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingreso de Datos de Clientes</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Encabezado principal de la página -->
+<h1 class="title">Formulario de Ingreso de Datos de Clientes</h1>
+<div class="container">
+  <!-- Formulario para ingresar datos de clientes -->
+  <form id="clienteForm">
+    <!-- Grupo de campos para ingresar la cédula -->
+    <div class="form-group">
+      <label for="cedula">Cédula:</label>
+      <input type="text" id="cedula" name="cedula" required>
+      <div id="cedulaError" class="error"></div>
+    </div>
+    <!-- Grupo de campos para ingresar los apellidos -->
+    <div class="form-group">
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" required>
+      <div id="apellidosError" class="error"></div>
+    </div>
+    <!-- Grupo de campos para ingresar los nombres -->
+    <div class="form-group">
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" name="nombres" required>
+      <div id="nombresError" class="error"></div>
+    </div>
+    <!-- Grupo de campos para ingresar la dirección -->
+    <div class="form-group">
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+      <div id="direccionError" class="error"></div>
+    </div>
+    <!-- Grupo de campos para ingresar el número de teléfono -->
+    <div class="form-group">
+      <label for="telefono">Número de teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+      <div id="telefonoError" class="error"></div>
+    </div>
+    <!-- Grupo de campos para ingresar el correo electrónico -->
+    <div class="form-group">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <div id="emailError" class="error"></div>
+    </div>
+    <!-- Grupo de campos para ingresar la edad -->
+    <div class="form-group">
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required>
+      <div id="edadError" class="error"></div>
+    </div>
+    <!-- Botón para enviar el formulario -->
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
